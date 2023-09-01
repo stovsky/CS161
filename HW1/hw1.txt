@@ -1,0 +1,47 @@
+Tyler Stovsky
+
+Question 1:
+
+(SEQ 0) -> 1
+(SEQ 1) -> 1
+(SEQ 2) -> 1
+(SEQ 3) -> 3
+(SEQ 4) -> 5
+(SEQ 5) -> 9
+(SEQ 6) -> 17
+(SEQ 7) -> 31
+(SEQ 8) -> 57
+(SEQ 9) -> 105
+(SEQ 15) -> 4063
+(SEQ 25) -> 1800281
+
+As the value of N increases, the SEQ function takes exponentially more time to compute the result. This is because the function is calling itself recursively, so it is actually computing the Padovan number for every number less than N as well.  It doesn't remember if it already computed an Nth Padovan number, so it may compute each Padovan number more than once as well.  This results in a very slow computation time for large N.
+
+Question 2:
+
+(SUMS 0) -> 0
+(SUMS 1) -> 0
+(SUMS 2) -> 0
+(SUMS 3) -> 2
+(SUMS 4) -> 4
+(SUMS 5) -> 8
+(SUMS 6) -> 16
+(SUMS 7) -> 30
+(SUMS 8) -> 56
+(SUMS 9) -> 104
+(SUMS 15) -> 4062
+(SUMS 25) -> 1800280
+
+Question 3:
+
+(ANON '42) -> 0
+(ANON 'FOO) -> 0
+(ANON '(((L E) F) T)) -> (((0 0) 0) 0)
+(ANON '(5 FOO 3.1 -0.2)) -> (0 0 0 0)
+(ANON '(1 (FOO 3.1) -0.2)) -> (0 (0 0) 0)
+(ANON '(((1 2) (FOO 3.1)) (BAR -0.2))) -> (((0 0) (0 0)) (0 0))
+(ANON '(R (I (G (H T))))) -> (0 (0 (0 (0 0))))
+
+Additional test cases:
+(ANON '()) -> NIL
+(ANON '(())) -> (NIL)

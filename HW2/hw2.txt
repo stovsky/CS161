@@ -1,0 +1,20 @@
+Tyler Stovsky
+705512370
+
+Question 1:
+
+(DFSRL '(ROOT)) -> (ROOT)
+
+(DFSRL '((((L E) F) T))) -> (T F E L)
+
+(DFSRL '((R (I (G (H T)))))) -> (T H G I R)
+
+(DFSRL '(((A (B)) (D) C))) -> (C D B A)
+
+(DFSRL '((T (H R E) E))) -> (E E R H T)
+
+(DFSRL '((A ((C ((E) D)) B)))) -> (B D E C A)
+
+Question 2:
+
+(DFS '(NIL NIL NIL NIL) NIL) -> ((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))

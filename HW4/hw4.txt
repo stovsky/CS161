@@ -1,0 +1,23 @@
+Tyler Stovsky
+705512370
+
+1. No, the instance with 3 colors is not satisfiable.
+2. Yes, the instance with 4 colors is satisfiable.
+3. The answers tell me that there is no solution to the graph coloring problem with 3 colors, but there is a solution with 4 colors.
+
+The results of RSAT are:
+-1 -2 -3 4 -5 -6 7 -8 -9 10 -11 -12 -13 -14 15 -16 17 -18 -19 -20 -21 22 -23 -24 25 -26 -27 -28
+
+This means that, if we have the colors (red, green, yellow, blue), a solution is as follows:
+
+Node 1: Red
+Node 2: Green
+Node 3: Yellow
+Node 4: Green
+Node 5: Blue
+Node 6: Yellow
+Node 7: Blue
+
+
+4. I attemped the problem using 3, 4, 5, 6, 7 colors. They were all unsatisfiable.
+Finally, I found a solution for 8 colors.  Thus, the minimum number of colors required to properly color graph2.txt is 8.
